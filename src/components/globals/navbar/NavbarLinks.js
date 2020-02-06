@@ -33,7 +33,11 @@ export default class NavbarLinks extends Component {
       <LinkWrapper open={this.props.navbarOpen}>
         {this.state.links.map(link => (
           <li key={link.id}>
-            <Link to={link.path} className="nav-link">
+            <Link
+              to={link.path}
+              className="nav-link"
+              activeStyle={{ color: ` ${styles.colors.mainYellow}` }}
+            >
               {link.name}
             </Link>
           </li>

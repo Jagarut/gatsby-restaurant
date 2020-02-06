@@ -17,7 +17,7 @@ const IndexPage = () => (
         title="eatery"
         subtitle="C/Portugal nº11 - Las Palmas de Gran Canaria -"
       >
-        <Link to={/menu/}>
+        <Link to={/menu/} style={{ textDecoration: "none" }}>
           <BannerButton style={{ margin: "2rem auto" }}>menu</BannerButton>
         </Link>
       </Banner>
